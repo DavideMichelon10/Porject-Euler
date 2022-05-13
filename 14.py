@@ -24,10 +24,10 @@ final_num = {
 }
 
 while number < LIMIT:
-    number_chain_el = get_number_of_chain_elements(number, number_chain_elements)
-    number_chain_elements[number] = number_chain_el
-    if  number_chain_el > final_num['max']:
-        final_num['max'] =number_chain_el
+    chain_elements = get_number_of_chain_elements(number, number_chain_elements)
+    number_chain_elements[number] = chain_elements
+    if  chain_elements > final_num['max']:
+        final_num['max'] =chain_elements
         final_num['number_produces_max'] = number
     number += 1
     
