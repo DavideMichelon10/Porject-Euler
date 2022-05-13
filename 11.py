@@ -42,8 +42,7 @@ def oriz_prod(i, j, mat):
             return 1
     return prod
 
-def vertical_prod(i, j, mat):
-    prod = 1
+def vertical_prod(i, j, mat, prod = 1):
     for ind in range(INDEX):
         try:
             prod = prod*int(mat[i + ind][j])
@@ -51,8 +50,7 @@ def vertical_prod(i, j, mat):
             return 1
     return prod
 
-def obl_prod_right(i, j, mat):
-    prod = 1
+def obl_prod_right(i, j, mat, prod = 1):
     for ind in range(INDEX):
         try:
             prod = prod*int(mat[i + ind][j + ind])
@@ -60,8 +58,7 @@ def obl_prod_right(i, j, mat):
             return 1
     return prod
 
-def obl_prod_left(i, j, mat):
-    prod = 1
+def obl_prod_left(i, j, mat, prod = 1):
     for ind in range(INDEX):
         try:
             prod = prod*int(mat[i - ind][j + ind])
@@ -81,4 +78,3 @@ for i in range(SIZE):
         if max < res:
             max = res
 print(max)
-
