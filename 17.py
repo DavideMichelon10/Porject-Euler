@@ -8,7 +8,7 @@ values = { 0:'',
 }
 
 def mat_2_digits(first, second):
-    
+
     if int(str(first) + str(second)) in values: 
         return len(values[int(str(first) + str(second))])
 
